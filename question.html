@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weekly Schedule</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			padding: 8px;
+			text-align: center;
+			border: 1px solid black;
+		}
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+		td {
+			background-color: #f2f2f2;
+		}
+		td[colspan="2"], td[colspan="3"] {
+			font-weight: bold;
+			background-color: #c2d6d6;
+		}
+		td.subject-math, td.subject-history, td.subject-english, td.subject-nepali, td.subject-pe {
+			background-color: #c2d6d6;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Time</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday/Friday</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>9:00-10:00</td>
+				<td class="subject-math">Math</td>
+				<td class="subject-math">Math</td>
+				<td class="subject-math">Math</td>
+				<td class="subject-creative" colspan="2">Creative</td>
+			</tr>
+			<tr>
+				<td>10:00-11:00</td>
+				<td class="subject-history">History</td>
+				<td class="subject-history">History</td>
+				<td class="subject-history">History</td>
+				<td class="subject-creative" colspan="2">Creative</td>
+			</tr>
+			<tr>
+				<td>11:00-12:00</td>
+				<td colspan="3">Recess Day</td>
+				<td class="subject-sports" colspan="2">Sports</td>
+			</tr>
+			<tr>
+				<td>12:00-13:00</td>
+				<td class="subject-english">English</td>
+				<td class="subject-english">English</td>
+				<td class="subject-english">English</td>
+				<td rowspan="3" class="subject-creative">Creative</td>
+			</tr>
+			<tr>
+				<td>13:00-14:00</td>
+				<td class="subject-nepali">Nepali</td>
+				<td class="subject-nepali">Nepali</td>
+				<td class="subject-nepali">Nepali</td>
+			</tr>
+			<tr>
+				<td>14:00-15:00</td>
+				<td class="subject-pe">Physical Education</td>
+				<td class="subject-pe">Physical Education</td>
+				<td class="subject-pe">Physical Education</td>
+			</tr>
+			<tr>
+				<td>15:00-16:00</td>
+				<td colspan="3" class="subject-sports">Sports</td>
+				<td colspan="2" class="subject-creative">Creative</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
