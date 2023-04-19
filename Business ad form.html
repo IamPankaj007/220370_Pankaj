@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Business Ad Form</title>
+    <style>
+      body {
+        background-image: url('image.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+      
+      form {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Business Ad Form</h1>
+    <form>
+      <label for="name">Business Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea>
+      <label for="contact">Contact Information:</label>
+      <input type="text" id="contact" name="contact">
+      <label for="website">Website:</label>
+      <input type="text" id="website" name="website">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
