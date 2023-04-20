@@ -1,0 +1,75 @@
+body {
+	background-color: #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+h1 {
+	margin: 0;
+}
+
+nav {
+	background-color: #4CAF50;
+	overflow: hidden;
+}
+
+nav a {
+	float: left;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-right: 1px solid #bbb;
+}
+
+nav a:last-child {
+	border-right: none;
+}
+
+/* change color on hover */
+nav a:hover {
+	background-color: #555;
+}
+
+/* change color after visit */
+nav a:visited {
+	color: #ccc;
+}
+
+section {
+	padding: 20px;
+	float: left;
+	width: 70%;
+}
+
+aside {
+	background-color: #f1f1f1;
+	padding: 20px;
+	float: left;
+	width: 30%;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	clear: both;
+}
+
+/* change color when active */
+nav a:active {
+	background-color: #999;
+}
+
+/* change color when focus */
+nav a:focus {
+	outline: none;
+	background-color: #aaa;
+}

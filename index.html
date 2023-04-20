@@ -1,31 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        p::first-letter{
-            text-transform: uppercase;
-        }
-        input[type="text"]{
-            color: red;
-            background-color: aqua !important;
-            border: purple;
-            font-size: 18px;
-        }
-        input[type="button"]{
-            background-color: forestgreen;
-            margin: 20px;
-            padding: 10px;
-        }
-    </style>
+	<title>My Perfect Webpage</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+		h1 {
+			margin: 0;
+		}
+		nav {
+			background-color: #4CAF50;
+			overflow: hidden;
+		}
+		nav a {
+			float: left;
+			color: #fff;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			border-right: 1px solid #bbb;
+		}
+		nav a:last-child {
+			border-right: none;
+		}
+		section {
+			padding: 20px;
+			float: left;
+			width: 70%;
+		}
+		aside {
+			background-color: #f1f1f1;
+			padding: 20px;
+			float: left;
+			width: 30%;
+		}
+		footer {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+			clear: both;
+		}
+	</style>
 </head>
 <body>
-    <form action="">
-        <input type="text">
-        <input type="button" value="submit">
-    </form>
+	<header>
+		<h1>My Perfect Webpage</h1>
+	</header>
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+	</nav>
+	<center> <img src="8.jpg" height="1000px" width="1250px"> </center>
+		<h2>Section Title</h2>
+		<p>Nepal is a small landlocked country in South Asia, located between India and China. It has a diverse geography that ranges from the high Himalayan mountains in the north to the fertile<br>
+			 Terai plains in the south. Mount Everest, the highest mountain in the world, lies on the Nepal-China border.</p>
+
+		<h2>Aside Title</h2>
+		<p> Nepal has a population of around 29 million people and is known for its cultural and religious diversity.<br> The official language of Nepal is Nepali, and there are over 100 other spoken languages in the country.  </p>
+	</aside>
+	<footer>
+		<center> Copyright © My Perfect Webpage </center>
+	</footer>
 </body>
 </html>
