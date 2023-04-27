@@ -1,3 +1,282 @@
-h1 {
-    color: purple;
+/* CSS Styles for My Perfect Webpage */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
 }
+
+/* Set background color for body */
+body {
+    background-color: #f5f5f5;
+}
+
+/* Style header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Style hero section */
+#hero {
+    background-image: url('https://picsum.photos/1200/800');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#hero button {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#hero button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style features section */
+#features {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 30%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Style about section */
+#about {
+    background-color: #f5f5f5;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Style services section */
+#services {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+/* Style service cards */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    }
+    
+    .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    }
+    
+    .service-card p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 1rem;
+    }
+    
+    .service-card button {
+    padding: 1rem 2rem;
+    background-color: #333;
+    border: none;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    }
+    
+    .service-card button:hover {
+    background-color: #fff;
+    color: #333;
+    }
+    
+    /* Style pricing section */
+    #pricing {
+    background-color: #f5f5f5;
+    padding: 4rem 2rem;
+    text-align: center;
+    }
+    
+    #pricing h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #333;
+    }
+    
+    .pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    
+    .pricing-plan {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 30%;
+    margin-bottom: 2rem;
+    text-align: center;
+    }
+    
+    .pricing-plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    }
+    
+    .pricing-plan p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 1rem;
+    }
+    
+    .pricing-plan button {
+    padding: 1rem 2rem;
+    background-color: #333;
+    border: none;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    }
+    
+    .pricing-plan button:hover {
+    background-color: #fff;
+    color: #333;
+    }
+    
+    /* Style contact section */
+    #contact {
+    background-color: #333;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    }
+    
+    #contact h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    }
+    
+    .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    }
+    
+    .contact-form button {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    }
+    
+    .contact-form button:hover {
+    background-color: #333;
+    color: #fff;
+    }
