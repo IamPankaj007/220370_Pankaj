@@ -9,14 +9,24 @@
       display: inline-block;
       transition: transform 1s ease;
     }
+
+    p:hover{
+      color: aqua;
+    }
     
     /* Define the hover style of the text */
-    p:hover {
+    .clockwise:hover{
       transform: rotate(360deg);
+    }
+
+    .anticlockwise:hover{
+      transform: rotate(-360deg);
+
     }
   </style>
 </head>
 <body>
-  <p>Example Text</p>
+  <p class="clockwise">Example Text</p>
+  <p class="anticlockwise">Example Text</p>
 </body>
 </html>
