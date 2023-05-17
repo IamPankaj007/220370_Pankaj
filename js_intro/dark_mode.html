@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function lightMode(){
+            document.getElementById("demo").classList.remove('dark');
+        }
+        function darkMode(){
+            document.getElementById("demo").classList.add('dark');
+        }
+    </script>
+    <style>
+        .container{
+            border: 1px solid black;
+        }
+        .dark{
+            background-color: #1a1a1a;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo" class="container">
+        <h1>This is Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem perferendis dolorum quas exercitationem debitis sapiente excepturi, sed aliquam hic, rem deserunt explicabo alias. Rerum libero ipsam adipisci unde quibusdam aliquam.</p>
+    </div>
+    <button onclick="lightMode()">Light Mode</button>
+    <button onclick="darkMode()">Dark Mode</button>
+
+</body>
+
+
+</html>
