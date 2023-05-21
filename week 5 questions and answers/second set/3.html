@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess the Correct Number</title>
+  <script>
+    function getCorrectNumber() {
+      var correctNumber = 42; // The correct number to be guessed
+      var guess = parseInt(prompt("Guess the correct number:"));
+
+      while (isNaN(guess) || guess !== correctNumber) {
+        if (isNaN(guess)) {
+          guess = parseInt(prompt("Invalid input! Please enter a number:"));
+        } else {
+          guess = parseInt(prompt("Wrong number! Guess again:"));
+        }
+      }
+
+      alert("Congratulations! You guessed the correct number: " + correctNumber);
+    }
+  </script>
+</head>
+<body>
+  <button onclick="getCorrectNumber()">Start Guessing</button>
+</body>
+</html>

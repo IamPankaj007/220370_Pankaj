@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Marks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    #marks-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    #marks-list li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    #marks-list li span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <ul id="marks-list"></ul>
+
+  <script>
+    var students = [
+      { name: "John", marks: 85 },
+      { name: "Emily", marks: 92 },
+      { name: "Michael", marks: 78 },
+      { name: "Sophia", marks: 89 },
+      { name: "William", marks: 95 }
+    ];
+
+    var marksList = document.getElementById("marks-list");
+    
+    for (var i = 0; i < students.length; i++) {
+      var student = students[i];
+      var listItem = document.createElement("li");
+      var nameSpan = document.createElement("span");
+      nameSpan.innerText = student.name + ": ";
+      listItem.appendChild(nameSpan);
+      listItem.innerHTML += student.marks;
+      marksList.appendChild(listItem);
+    }
+  </script>
+</body>
+</html>
