@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  display: inline-block;  
+  width: 100px;
+  height: 100px;
+  transition: 1s;
+  transition-delay: 1s;
+
+}
+
+div:hover {
+  width: 120px;
+  height: 120px;
+  background-color:blue;
+}
+#clock{
+    background: red;
+
+}
+
+#anti-clock{
+    background-color: green;
+}
+#clock:hover{
+    transform: rotate(360deg);
+    background: green;
+
+
+}
+#anti-clock:hover{
+    transform: rotate(-360deg);
+    background: red;
+
+}
+</style>
+</head>
+<body>
+
+<div id="clock"></div>
+<div id="anti-clock"></div>
+<div id="clock"></div>
+
+</body>
+</html>
